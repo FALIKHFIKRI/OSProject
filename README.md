@@ -5,9 +5,9 @@ Group Name: __Cupcaked__.
 Section: __3__. 
 
 Team Mates:
-1. __MUHAMMAD FALIKH FIKRI BIN MOHD FAUZI__ and __2211635__
-2. __MUHAMMAD SAKHAWI AIMAN BIN MOHD PAHAME__ and __2216715__
-3. __MUHAMMAD AFLAH BIN MOHAMAD ZULKHAIRI__ and __2217393__
+1. __MUHAMMAD FALIKH FIKRI BIN MOHD FAUZI 2211635__
+2. __MUHAMMAD SAKHAWI AIMAN BIN MOHD PAHAME 2216715__
+3. __MUHAMMAD AFLAH BIN MOHAMAD ZULKHAIRI 2217393__
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
