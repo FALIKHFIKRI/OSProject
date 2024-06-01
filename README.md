@@ -1,8 +1,8 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Cupcaked__. 
+Group Name: __Cupcaked__ 
 
-Section: __3__. 
+Section: __3__
 
 Team Mates:
 1. __MUHAMMAD FALIKH FIKRI BIN MOHD FAUZI 2211635__
