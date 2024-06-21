@@ -25,7 +25,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __https://github.com/FALIKHFIKRI/OSProject__.
-2. How many files and folders are in this repository. ***(1 mark)*** __7 files and 1 folder__.
+2. How many files and folders are in this repository. ***(1 mark)*** __7 files & 1 folder__.
 
 
 ## Exploring github codespaces
@@ -57,9 +57,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu__.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __4 cores, 8 GB RAM, 32 GB disk and 8 cores, 16 GB RAM, 64 GB disk__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __We must commit and sync our current work on source control to ensure that our changes are saved, versioned, and backed up. This allows for collaboration with team members, helps track the history of modifications, and prevents loss of work.__.
 
 ## Exploring the Terminal
 
@@ -76,9 +76,45 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** __/workspaces/OSProject__.
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
+```
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
 3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
+```
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10381148  20772432  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        8     65528   1% /dev/shm
+/dev/root       30298176 24493900   5787892  81% /vscode
+/dev/sda1       46127956      104  43752276   1% /tmp
+/dev/loop3      32847680 10381148  20772432  34% /workspaces
+```
 4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
 5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
 6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
