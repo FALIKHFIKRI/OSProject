@@ -76,7 +76,10 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __/workspaces/OSProject__.
+1. Run the command **pwd** . ***(1 mark)*** 
+
+__/workspaces/OSProject__.
+
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
 ```
 root:x:0:0:root:/root:/bin/bash
@@ -407,8 +410,13 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+
+__No, files in a Docker container are not persistent by default. Docker containers are designed to be stateless and ephemeral. When you stop or delete a container, any changes made to its filesystem during its lifetime (like creating files, installing software, or modifying configurations) are lost. This is because Docker containers use a layered filesystem where changes made during runtime are stored in a writable layer separate from the container image itself. When the container stops or is removed, this writable layer is discarded__.
+
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+
+__Yes, multiple instances of Debian Linux can be run. Each container runs independently, utilizing resources and isolating processes from other containers and the host system. Docker provides efficient resource utilization and allows you to scale horizontally by running multiple instances of containers based on the same or different images__.
 
 ## Running your own container with persistent storage
 
