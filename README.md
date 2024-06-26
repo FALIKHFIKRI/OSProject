@@ -476,9 +476,17 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+
+ __The user is root and the group is root__.
+
+2. What port is the apache web server running. ***(1 mark)***
+
+ __Port 80__.
+
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+
+__Port 8080__.
 
 ## Create SUB Networks
 
@@ -497,11 +505,35 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+
+ __BusyBox is a lightweight, single-executable that combines many common UNIX utilities (like ls, cp, mv, etc.) into one small binary. It's often used in embedded systems and small Linux distributions because of its minimal size and extensive functionality.__
+
+__The --name switch in the docker run command allows you to assign a custom name to the container. This makes it easier to reference and manage the container later, as opposed to using the randomly generated container ID or name.__
+
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
+```
+NETWORK ID     NAME      DRIVER    SCOPE
+3315213df9b6   bluenet   bridge    local
+9c5d558cb53a   bridge    bridge    local
+2c6e1b9c680c   host      host      local
+70ac31a11cd7   none      null      local
+7ed2b9d8c61d   rednet    bridge    local
+```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
 4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
+c1
+```
+"Gateway": "172.18.0.1"
+```
+c2
+```
+"Gateway": "172.19.0.1"
+```
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+```
+ping: bad address 'c2'
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
