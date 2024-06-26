@@ -338,15 +338,15 @@ __ls -asl: Lists detailed information about files and directories in the current
 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)***
 
- __Fill answer here__.
+ __48 bits__.
 
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
 
-__Fill answer here__.
+__3124.436 MHz__.
 
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
  
-__Fill answer here__.
+__PID 2753 with the command node__.
 
 
 ## Running your own container instance.
