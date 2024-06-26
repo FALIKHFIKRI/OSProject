@@ -862,7 +862,31 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 ***Questions:***
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+```
+{
+  "code": "ER_BAD_DB_ERROR",
+  "errno": 1049,
+  "sqlMessage": "Unknown database 'mydatabase'",
+  "sqlState": "42000",
+  "index": 0,
+  "sql": "SELECT * FROM mytable ORDER BY RAND() LIMIT 1"
+}
+```
+2. Show the instruction needed to make this work. ***(1 mark)*** 
+
+__1. Create a Bridging Network__.
+```
+docker network create bridgenet
+```
+__2. Connect Both Containers to the Bridging Network__.
+```
+docker network connect bridgenet mysql-container
+docker network connect bridgenet nodejs-container
+```
+__3. Test the Connection Again__.
+```
+curl http://localhost:3000/random
+```
 
 
 
